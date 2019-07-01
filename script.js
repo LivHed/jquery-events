@@ -13,22 +13,22 @@ $(document).ready(function(){
     
 
     $("#effect_button1").on("click", function() {
- 		$("#paragraph1").toggle('1000');
+ 		$("#paragraph1").slideToggle('1000');
    });
     $("#effect_button2").click(function(){
-        $('#paragraph2').toggle('1000');
+        $('#paragraph2').slideToggle('1000');
     });
     $("#effect_button3").click(function(){
-        $('#paragraph3').toggle('1000');
+        $('#paragraph3').slideToggle('1000');
     });
     $("#effect_button4").click(function(){
-        $('#paragraph4').toggle('1000');
+        $('#paragraph4').slideToggle('1000');
     });
     $("#effect_button5").click(function(){
-        $('#paragraph5').toggle('1000');
+        $('#paragraph5').slideToggle('1000');
     });
     $("#effect_button6").click(function(){
-        $('#paragraph6').toggle('1000');
+        $('#paragraph6').slideToggle('1000');
     });
 
 
