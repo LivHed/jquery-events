@@ -10,6 +10,12 @@ $(document).ready(function(){
     $("h2").hover(function(){
         $("h2").addClass( "h2_color");   
     });
+    
+    $("#effect_button1").on("click", function() {
+ 		$("#effect_button1").hide('medium');
+          
+});
+
 
     /*
     this will apply larger font size to the active h2 element 
