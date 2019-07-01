@@ -1,7 +1,7 @@
 //waits until page is loaded first
-$(document).ready(function(){
+ $(document).ready(function(){ 
 
-    //applies colour red to paragraphs when clicked on 
+   //applies colour red to paragraphs when clicked on 
     $("p").click(function(){
         $("p").addClass("highlight_text");
     });
@@ -9,7 +9,7 @@ $(document).ready(function(){
     //will add lightblue to h2 elements
     $("h2").hover(function(){
         $("h2").addClass( "h2_color");   
-    });
+    }); */
     
 /*paragraphs hiding when clicking on the button ,and then show when clicking on the button again*/
     $("#effect_button1").on("click", function() {
@@ -29,7 +29,7 @@ $(document).ready(function(){
     });
     $("#effect_button6").click(function(){
         $('#paragraph6').slideToggle('1000');
-    });
+    });  
 
 /*fadeTo effect when hovering over the button */
 
@@ -145,4 +145,20 @@ $(document).ready(function(){
     $(".bottom_button").mouseleave(function(){
         $("body").css( "background-color", "#eee"); 
     });
+    */
+    
+    $(".stream-nav").on("click", function() {
+    // A selector to match all cards in all streams
+    var allStreamsCardsSelector = ".card";
+    // A selector to match just this stream's cards
+    // for this, we use the class with the name of the stream,
+    // which is the same as this nav link's id and then the "-card" suffix.
+    var thisStreamCardsSelector = "." + this.id + "-card";
+
+    // First remove the highlight from all of the cards
+    $(allStreamsCardsSelector).removeClass("card-highlight");
+    // Then apply the highlight to just this stream's cards
+    $(thisStreamCardsSelector).addClass("card-highlight");
 });
+
+ }); 
