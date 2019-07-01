@@ -11,9 +11,9 @@ $(document).ready(function(){
         $("h2").addClass( "h2_color");   
     });
     
-
+/*paragraphs hiding when clicking on the button ,and then show when clicking on the button again*/
     $("#effect_button1").on("click", function() {
- 		$("#paragraph1").slideToggle('1000');
+ 		 $('#paragraph1').slideToggle('1000');
    });
     $("#effect_button2").click(function(){
         $('#paragraph2').slideToggle('1000');
@@ -29,6 +29,50 @@ $(document).ready(function(){
     });
     $("#effect_button6").click(function(){
         $('#paragraph6').slideToggle('1000');
+    });
+
+/*fadeTo effect when hovering over the button */
+
+     $("#effect_button1").mouseenter(function(){
+        $('#effect_button1').fadeTo(1000, 0.5);
+    });
+    $("#effect_button1").mouseleave(function(){
+        $('#effect_button1').fadeTo(1000, 1);
+    });
+
+    $("#effect_button2").mouseenter(function(){
+        $('#effect_button2').fadeTo(1000, 0.5);
+    });
+    $("#effect_button2").mouseleave(function(){
+        $('#effect_button2').fadeTo(1000, 1);
+    });
+
+    $("#effect_button3").mouseenter(function(){
+        $('#effect_button3').fadeTo(1000, 0.5);
+    });
+    $("#effect_button3").mouseleave(function(){
+        $('#effect_button3').fadeTo(1000, 1);
+    });
+
+    $("#effect_button4").mouseenter(function(){
+        $('#effect_button4').fadeTo(1000, 0.5);
+    });
+    $("#effect_button4").mouseleave(function(){
+        $('#effect_button4').fadeTo(1000, 1);
+    });
+
+    $("#effect_button5").mouseenter(function(){
+        $('#effect_button5').fadeTo(1000, 0.5);
+    });
+    $("#effect_button5").mouseleave(function(){
+        $('#effect_button5').fadeTo(1000, 1);
+    });
+
+    $("#effect_button6").mouseenter(function(){
+        $('#effect_button6').fadeTo(1000, 0.5);
+    });
+    $("#effect_button6").mouseleave(function(){
+        $('#effect_button6').fadeTo(1000, 1);
     });
 
 
