@@ -11,10 +11,25 @@ $(document).ready(function(){
         $("h2").addClass( "h2_color");   
     });
     
+
     $("#effect_button1").on("click", function() {
- 		$("#effect_button1").hide('medium');
-          
-});
+ 		$("#paragraph1").toggle('1000');
+   });
+    $("#effect_button2").click(function(){
+        $('#paragraph2').toggle('1000');
+    });
+    $("#effect_button3").click(function(){
+        $('#paragraph3').toggle('1000');
+    });
+    $("#effect_button4").click(function(){
+        $('#paragraph4').toggle('1000');
+    });
+    $("#effect_button5").click(function(){
+        $('#paragraph5').toggle('1000');
+    });
+    $("#effect_button6").click(function(){
+        $('#paragraph6').toggle('1000');
+    });
 
 
     /*
