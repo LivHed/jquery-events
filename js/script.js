@@ -11,7 +11,7 @@
         $("h2").addClass( "h2_color");   
     }); */
     
-    //sets <a> element within paragraph  to yellow  
+    //sets <a> element within paragraph  to yellow, practise example from lesson with traversing the DOM.
 	$("p").click(function(){
 		$(this).children("a").css("background-color", "yellow"); /* returns all the <a> child elements that are 
 		within this paragraph*/
