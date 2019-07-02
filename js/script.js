@@ -1,7 +1,7 @@
 //waits until page is loaded first
  $(document).ready(function(){ 
 
-   //applies colour red to paragraphs when clicked on 
+ /*  //applies colour red to paragraphs when clicked on 
     $("p").click(function(){
         $("p").addClass("highlight_text");
     });
@@ -10,6 +10,12 @@
     $("h2").hover(function(){
         $("h2").addClass( "h2_color");   
     }); */
+    
+    //sets <a> element within paragraph  to yellow  
+	$("p").click(function(){
+		$(this).children("a").css("background-color", "yellow"); /* returns all the <a> child elements that are 
+		within this paragraph*/
+	});
     
 /*paragraphs hiding when clicking on the button ,and then show when clicking on the button again*/
     $("#effect_button1").on("click", function() {
@@ -160,5 +166,6 @@
     // Then apply the highlight to just this stream's cards
     $(thisStreamCardsSelector).addClass("card-highlight");
 });
+
 
  }); 
