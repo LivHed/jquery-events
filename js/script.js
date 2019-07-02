@@ -11,11 +11,6 @@
         $("h2").addClass( "h2_color");   
     }); */
     
-    //sets <a> element within paragraph  to yellow, practise example from lesson with traversing the DOM.
-	$("p").click(function(){
-		$(this).children("a").css("background-color", "yellow"); /* returns all the <a> child elements that are 
-		within this paragraph*/
-	});
     
 /*paragraphs hiding when clicking on the button ,and then show when clicking on the button again*/
     $("#effect_button1").on("click", function() {
@@ -151,7 +146,7 @@
     $(".bottom_button").mouseleave(function(){
         $("body").css( "background-color", "#eee"); 
     });
-    */
+    
     
     $(".stream-nav").on("click", function() {
     // A selector to match all cards in all streams
@@ -166,6 +161,17 @@
     // Then apply the highlight to just this stream's cards
     $(thisStreamCardsSelector).addClass("card-highlight");
 });
+
+ //sets <a> element within paragraph  to yellow, practise example from lesson with traversing the DOM.
+	$("p").click(function(){
+		$(this).children("a").css("background-color", "yellow"); /* returns all the <a> child elements that are 
+		within this paragraph*/
+	});
+
+// Toggle the visibility of the paragraph when a button is clicked 
+	$("button").click(function(){
+		$(this).prev().slideToggle('slow');
+	});
 
 
  }); 
