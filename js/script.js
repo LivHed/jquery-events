@@ -173,5 +173,8 @@
 		$(this).prev().slideToggle('slow');
 	});
 
-
+// Open the paragraph once the image is clicked
+  $("img").click(function(){
+		$(this).next().children("p").slideDown();
+	});
  }); 
